@@ -156,6 +156,8 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
+    display: inline-block;
+    margin: 20px 0;
 }
 
 /* ANIMAÇÃO DO MENU */
