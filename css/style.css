@@ -1,8 +1,11 @@
-body {
-    font-family: sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container {
+.wrapper {
+    background-color: rgb(221, 161, 171);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -10,70 +13,36 @@ body {
     align-items: center;
 }
 
-.card {
-    height: 400px;
-    width: 500px;
-    background-image: url('../img/landscape.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(0.5);
-    color: white;
-    transition: 0.3s;
-}
-
-.card-wrapper {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.card-wrapper::before {
-    content: '';
-    position: absolute;
+.checkbox {
     height: 100px;
     width: 100px;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
 }
 
-.card-wrapper h2 {
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    transition: 0.3s;
+.checkbox .trace {
+    width: 90px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
 }
 
-.card-wrapper p {
-    font-size: 0;
-    visibility: hidden;
-    opacity: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+
+}
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
 }
 
-.card:hover {
-    filter: unset;
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
 }
 
-.card:hover > .card-wrapper::before {
-    height: 300px;
-    width: 400px;
-    opacity: 1;
-}
-
-.card:hover > .card-wrapper p {
-    opacity: 1;
-    visibility: visible;
-    font-size: 14px;
-}
