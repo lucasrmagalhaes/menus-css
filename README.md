@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://lucasrmagalhaes.github.io/menus-css/" target="_blank">
     <img 
-         src="https://github.com/lucasrmagalhaes/menusComCSS-DIO/blob/main/img/projeto.jpg" 
+         src="https://raw.githubusercontent.com/lucasrmagalhaes/menus-css/main/img/projeto.jpg" 
          alt="Menus CSS" 
     />
   </a>
